@@ -1,5 +1,15 @@
 syntax = "proto3";
 
-message Capibara {
+package capibara;
+
+service Capibara {
+    rpc GetCapibaraInfo(CapibaraRequest) returns (CapibaraReply) {}
+}
+
+message CapibaraRequest {
+    int64 id = 1;
+}
+
+message CapibaraReply {
     int64 id = 1;
 }

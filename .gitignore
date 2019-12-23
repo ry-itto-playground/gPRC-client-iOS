@@ -5,3 +5,7 @@ xcuserdata/
 .swiftpm
 
 .build/
+
+*.grpc.swift
+
+*.pb.swift
