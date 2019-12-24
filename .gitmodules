@@ -1,3 +1,6 @@
 [submodule "grpc-swift"]
 	path = grpc-swift
 	url = https://github.com/grpc/grpc-swift
+[submodule "gPRC-server-java"]
+	path = gPRC-server-java
+	url = https://github.com/ry-itto/gPRC-server-java

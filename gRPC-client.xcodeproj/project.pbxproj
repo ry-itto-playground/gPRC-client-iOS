@@ -15,8 +15,8 @@
 		BF821A5F23AF1A3800EE5516 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF821A5D23AF1A3800EE5516 /* LaunchScreen.storyboard */; };
 		BF821A6823AF1C0600EE5516 /* GRPC in Frameworks */ = {isa = PBXBuildFile; productRef = BF821A6723AF1C0600EE5516 /* GRPC */; };
 		BFEA88A023AF3FF00092C30F /* CapibaraClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA889F23AF3FF00092C30F /* CapibaraClient.swift */; };
-		BFEA88A523B077310092C30F /* capibara.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA88A323B077310092C30F /* capibara.grpc.swift */; };
-		BFEA88A623B077310092C30F /* capibara.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA88A423B077310092C30F /* capibara.pb.swift */; };
+		BFEA88A923B1D4100092C30F /* capibara.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA88A723B1D4100092C30F /* capibara.grpc.swift */; };
+		BFEA88AA23B1D4100092C30F /* capibara.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA88A823B1D4100092C30F /* capibara.pb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +29,8 @@
 		BF821A5E23AF1A3800EE5516 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF821A6023AF1A3800EE5516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFEA889F23AF3FF00092C30F /* CapibaraClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapibaraClient.swift; sourceTree = "<group>"; };
-		BFEA88A323B077310092C30F /* capibara.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = capibara.grpc.swift; sourceTree = "<group>"; };
-		BFEA88A423B077310092C30F /* capibara.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = capibara.pb.swift; sourceTree = "<group>"; };
+		BFEA88A723B1D4100092C30F /* capibara.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = capibara.grpc.swift; sourceTree = "<group>"; };
+		BFEA88A823B1D4100092C30F /* capibara.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = capibara.pb.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 		BF821A5123AF1A3700EE5516 /* gRPC-client */ = {
 			isa = PBXGroup;
 			children = (
-				BFEA88A323B077310092C30F /* capibara.grpc.swift */,
-				BFEA88A423B077310092C30F /* capibara.pb.swift */,
+				BFEA88A723B1D4100092C30F /* capibara.grpc.swift */,
+				BFEA88A823B1D4100092C30F /* capibara.pb.swift */,
 				BF821A5223AF1A3700EE5516 /* AppDelegate.swift */,
 				BF821A5423AF1A3700EE5516 /* SceneDelegate.swift */,
 				BF821A5623AF1A3700EE5516 /* ViewController.swift */,
@@ -158,9 +158,9 @@
 				BF821A5723AF1A3700EE5516 /* ViewController.swift in Sources */,
 				BFEA88A023AF3FF00092C30F /* CapibaraClient.swift in Sources */,
 				BF821A5323AF1A3700EE5516 /* AppDelegate.swift in Sources */,
-				BFEA88A623B077310092C30F /* capibara.pb.swift in Sources */,
+				BFEA88AA23B1D4100092C30F /* capibara.pb.swift in Sources */,
 				BF821A5523AF1A3700EE5516 /* SceneDelegate.swift in Sources */,
-				BFEA88A523B077310092C30F /* capibara.grpc.swift in Sources */,
+				BFEA88A923B1D4100092C30F /* capibara.grpc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
