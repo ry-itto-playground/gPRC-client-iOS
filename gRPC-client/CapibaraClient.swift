@@ -13,10 +13,10 @@ struct CapibaraClient {
     let client: Capibara_CapibaraServiceClient = {
         let group = MultiThreadedEventLoopGroup(numberOfThreads: 1)
         let configuration = ClientConnection.Configuration(
-            target: .hostAndPort("localhost", 8080),
+            target: .hostAndPort("localhost", 6565),
             eventLoopGroup: group)
         let connection = ClientConnection(configuration: configuration)
-        
+
         return Capibara_CapibaraServiceClient(connection: connection)
     }()
 }
