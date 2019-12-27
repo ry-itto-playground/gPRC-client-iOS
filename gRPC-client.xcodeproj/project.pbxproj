@@ -17,6 +17,9 @@
 		BFEA88A023AF3FF00092C30F /* CapibaraClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA889F23AF3FF00092C30F /* CapibaraClient.swift */; };
 		BFEA88B023B5F72D0092C30F /* GreeterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA88AF23B5F72D0092C30F /* GreeterClient.swift */; };
 		BFEA88B223B6016F0092C30F /* hello.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA88B123B6016F0092C30F /* hello.grpc.swift */; };
+		BFEA88B623B602740092C30F /* capibara.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA88B323B602740092C30F /* capibara.pb.swift */; };
+		BFEA88B723B602740092C30F /* hello.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA88B423B602740092C30F /* hello.pb.swift */; };
+		BFEA88B823B602740092C30F /* capibara.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA88B523B602740092C30F /* capibara.grpc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		BFEA889F23AF3FF00092C30F /* CapibaraClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapibaraClient.swift; sourceTree = "<group>"; };
 		BFEA88AF23B5F72D0092C30F /* GreeterClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreeterClient.swift; sourceTree = "<group>"; };
 		BFEA88B123B6016F0092C30F /* hello.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hello.grpc.swift; sourceTree = "<group>"; };
+		BFEA88B323B602740092C30F /* capibara.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = capibara.pb.swift; sourceTree = "<group>"; };
+		BFEA88B423B602740092C30F /* hello.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hello.pb.swift; sourceTree = "<group>"; };
+		BFEA88B523B602740092C30F /* capibara.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = capibara.grpc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +70,10 @@
 		BF821A5123AF1A3700EE5516 /* gRPC-client */ = {
 			isa = PBXGroup;
 			children = (
+				BFEA88B523B602740092C30F /* capibara.grpc.swift */,
+				BFEA88B423B602740092C30F /* hello.pb.swift */,
 				BFEA88B123B6016F0092C30F /* hello.grpc.swift */,
+				BFEA88B323B602740092C30F /* capibara.pb.swift */,
 				BF821A5223AF1A3700EE5516 /* AppDelegate.swift */,
 				BF821A5423AF1A3700EE5516 /* SceneDelegate.swift */,
 				BF821A5623AF1A3700EE5516 /* ViewController.swift */,
@@ -155,10 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFEA88B823B602740092C30F /* capibara.grpc.swift in Sources */,
 				BF821A5723AF1A3700EE5516 /* ViewController.swift in Sources */,
 				BFEA88B023B5F72D0092C30F /* GreeterClient.swift in Sources */,
 				BFEA88A023AF3FF00092C30F /* CapibaraClient.swift in Sources */,
+				BFEA88B623B602740092C30F /* capibara.pb.swift in Sources */,
 				BFEA88B223B6016F0092C30F /* hello.grpc.swift in Sources */,
+				BFEA88B723B602740092C30F /* hello.pb.swift in Sources */,
 				BF821A5323AF1A3700EE5516 /* AppDelegate.swift in Sources */,
 				BF821A5523AF1A3700EE5516 /* SceneDelegate.swift in Sources */,
 			);

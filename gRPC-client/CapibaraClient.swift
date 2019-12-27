@@ -10,13 +10,13 @@ import NIO
 import GRPC
 
 struct CapibaraClient {
-    let client: Capibara_CapibaraServiceClient = {
+    let client: Capibara_CapybaraServiceClient = {
         let group = MultiThreadedEventLoopGroup(numberOfThreads: 1)
         let configuration = ClientConnection.Configuration(
             target: .hostAndPort("localhost", 6565),
             eventLoopGroup: group)
         let connection = ClientConnection(configuration: configuration)
 
-        return Capibara_CapibaraServiceClient(connection: connection)
+        return Capibara_CapybaraServiceClient(connection: connection)
     }()
 }
