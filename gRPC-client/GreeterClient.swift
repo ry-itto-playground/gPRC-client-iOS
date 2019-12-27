@@ -6,4 +6,17 @@
 //  Copyright © 2019 ry-itto. All rights reserved.
 //
 
-import Foundation
+import GRPC
+import NIO
+
+struct GreeterClient {
+    var client: Greeter_GreeterServiceClient = {
+        let group = MultiThreadedEventLoopGroup(numberOfThreads: 1)
+        let configuration = ClientConnection.Configuration(
+            target: .hostAndPort("localhost", 6565),
+            eventLoopGroup: group)
+        let connection = ClientConnection(configuration: configuration)
+
+        return Greeter_GreeterServiceClient(connection: connection)
+    }()
+}

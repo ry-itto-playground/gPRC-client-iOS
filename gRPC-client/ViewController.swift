@@ -13,13 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let client = CapibaraClient()
-        let request = Capibara_CapibaraRequest.with {
-            $0.id = 1
+        let client = GreeterClient()
+        let request = Greeter_HelloRequest.with {
+            $0.name = ""
         }
         do {
-            let response = try client.client.getCapibaraInfo(request)
-                .response.wait()
+            let response = try client.client.sayHello(request).response.wait()
             print(response)
         } catch let e {
             print(e.localizedDescription)
