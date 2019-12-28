@@ -13,13 +13,13 @@
 		BF821A5A23AF1A3700EE5516 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF821A5823AF1A3700EE5516 /* Main.storyboard */; };
 		BF821A5C23AF1A3800EE5516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF821A5B23AF1A3800EE5516 /* Assets.xcassets */; };
 		BF821A5F23AF1A3800EE5516 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF821A5D23AF1A3800EE5516 /* LaunchScreen.storyboard */; };
-		BF821A6823AF1C0600EE5516 /* GRPC in Frameworks */ = {isa = PBXBuildFile; productRef = BF821A6723AF1C0600EE5516 /* GRPC */; };
 		BFEA88A023AF3FF00092C30F /* CapibaraClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA889F23AF3FF00092C30F /* CapibaraClient.swift */; };
 		BFEA88B023B5F72D0092C30F /* GreeterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA88AF23B5F72D0092C30F /* GreeterClient.swift */; };
 		BFEA88B223B6016F0092C30F /* hello.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA88B123B6016F0092C30F /* hello.grpc.swift */; };
 		BFEA88B623B602740092C30F /* capibara.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA88B323B602740092C30F /* capibara.pb.swift */; };
 		BFEA88B723B602740092C30F /* hello.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA88B423B602740092C30F /* hello.pb.swift */; };
 		BFEA88B823B602740092C30F /* capibara.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA88B523B602740092C30F /* capibara.grpc.swift */; };
+		BFEA88BB23B63E370092C30F /* GRPC in Frameworks */ = {isa = PBXBuildFile; productRef = BFEA88BA23B63E370092C30F /* GRPC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF821A6823AF1C0600EE5516 /* GRPC in Frameworks */,
+				BFEA88BB23B63E370092C30F /* GRPC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 			);
 			name = "gRPC-client";
 			packageProductDependencies = (
-				BF821A6723AF1C0600EE5516 /* GRPC */,
+				BFEA88BA23B63E370092C30F /* GRPC */,
 			);
 			productName = "gRPC-client";
 			productReference = BF821A4F23AF1A3700EE5516 /* gRPC-client.app */;
@@ -135,7 +135,7 @@
 			);
 			mainGroup = BF821A4623AF1A3700EE5516;
 			packageReferences = (
-				BF821A6623AF1C0600EE5516 /* XCRemoteSwiftPackageReference "grpc-swift" */,
+				BFEA88B923B63E370092C30F /* XCRemoteSwiftPackageReference "grpc-swift" */,
 			);
 			productRefGroup = BF821A5023AF1A3700EE5516 /* Products */;
 			projectDirPath = "";
@@ -372,7 +372,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BF821A6623AF1C0600EE5516 /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
+		BFEA88B923B63E370092C30F /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/grpc/grpc-swift";
 			requirement = {
@@ -383,9 +383,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BF821A6723AF1C0600EE5516 /* GRPC */ = {
+		BFEA88BA23B63E370092C30F /* GRPC */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BF821A6623AF1C0600EE5516 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			package = BFEA88B923B63E370092C30F /* XCRemoteSwiftPackageReference "grpc-swift" */;
 			productName = GRPC;
 		};
 /* End XCSwiftPackageProductDependency section */

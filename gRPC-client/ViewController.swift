@@ -7,18 +7,28 @@
 //
 
 import UIKit
+import GRPC
+import NIO
 
 class ViewController: UIViewController {
+
+    let client: Greeter_GreeterServiceClient = {
+        let group = MultiThreadedEventLoopGroup(numberOfThreads: 1)
+        let configuration = ClientConnection.Configuration(
+            target: .hostAndPort("localhost", 6565),
+            eventLoopGroup: group)
+        let connection = ClientConnection(configuration: configuration)
+        return Greeter_GreeterServiceClient(connection: connection)
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let client = GreeterClient()
         let request = Greeter_HelloRequest.with {
             $0.name = ""
         }
         do {
-            let response = try client.client.sayHello(request).response.wait()
+            let response = try client.sayHello(request).response.wait()
             print(response)
         } catch let e {
             print(e.localizedDescription)
